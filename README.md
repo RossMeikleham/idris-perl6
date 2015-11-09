@@ -1,6 +1,8 @@
 # idris-perl6
 Perl6 backend for Idris
 
+[![Build Status](https://travis-ci.org/RossMeikleham/idris-perl6.svg?branch=master)](https://travis-ci.org/RossMeikleham/idris-perl6)
+
 This repo is based on Edwin's PHP back end for Idris which can be found [here](https://github.com/edwinb/idris-php),
 and converts Idris intermediate representation into Perl6 source code.
 
