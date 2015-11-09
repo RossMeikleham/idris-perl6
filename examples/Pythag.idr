@@ -1,0 +1,9 @@
+module Main
+
+-- Calculate all pythagorean triplets up to the given amount
+pythag : Int -> List (Int, Int, Int)
+pythag max = [(x, y, z) | z <- [1..max], y <- [1..z], x <- [1..y],
+                          x * x + y * y == z * z]
+
+main : IO()
+main = print (pythag 50)
