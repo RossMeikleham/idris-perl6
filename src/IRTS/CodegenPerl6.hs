@@ -98,8 +98,8 @@ cgBody ret (SUpdate n e)
 cgBody ret (SProj e i)
    = ret $ cgVar e ++ "[" ++ show (i + 1) ++ "]"
 cgBody ret (SCon _ t n args)
-   = ret $ "(" ++ showSep "," 
-              (show t : (map cgVar args)) ++ ")"
+   = ret $ "[" ++ showSep "," 
+              (show t : (map cgVar args)) ++ "]"
 
 cgBody ret (SCase _ e alts) = do
      let scrvar = cgVar e 

@@ -12,4 +12,4 @@ fibonacci (S n) = fibonacci' 0 1 n
 
 main : IO ()
 main = do 
-  print $ fibonacci 3
+  print $ fibonacci 8
