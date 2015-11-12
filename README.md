@@ -9,8 +9,7 @@ and converts Idris intermediate representation into Perl6 source code.
 This currently only supports a very small set of Idris features, and performs absolutely no 
 optimisations. 
 
-See the examples folder for examples which can be compiled/run. (With the exception of the pythagoras example,
-as I still need to implement proper generation of perl arrays)
+See the examples folder for examples which can be compiled/run. 
 
 
 #Example
