@@ -12,7 +12,7 @@ optimisations.
 See the examples folder for examples which can be compiled/run. 
 
 
-#Example
+# Example
 ```
 $ cat fib.idr 
 module Main
@@ -34,7 +34,7 @@ $ perl6 fib.p6
 ```
 
 
-##Other Interesting Idris Backends 
+## Other Interesting Idris Backends 
 - Ruby: idris-ruby(https://github.com/mrb/idris-ruby), 
 - Python: idris-py(https://github.com/ziman/idris-py) 
 - Java: idris-java(https://github.com/idris-hackers/idris-java)
