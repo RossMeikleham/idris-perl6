@@ -6,6 +6,6 @@ env:
 
 script:
     - cabal configure 
-    - travis_wait 30 install --only-dependencies
-    - travis_wait 30 install
+    - travis_wait 60 install --only-dependencies
+    - travis_wait 60 install
 
