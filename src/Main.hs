@@ -2,8 +2,11 @@ module Main where
 
 import Idris.Core.TT
 import Idris.AbsSyntax
+import Idris.Options
 import Idris.ElabDecls
 import Idris.REPL
+import Idris.Main
+import Idris.ModeCommon
 
 import IRTS.Compiler
 import IRTS.CodegenPerl6
@@ -32,7 +35,7 @@ c_main :: Opts -> Idris ()
 c_main opts = do elabPrims
                  loadInputs (inputs opts) Nothing
                  mainProg <- elabMain
-                 ir <- compile (Via "perl6") (output opts) (Just mainProg)
+                 ir <- compile (Via IBCFormat "perl6") (output opts) (Just mainProg)
                  runIO $ codegenPerl6 ir
 
 main :: IO ()

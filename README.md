@@ -33,6 +33,17 @@ $ perl6 fib.p6
 21
 ```
 
+# Docker
+```
+git clone https://github.com/RossMeikleham/idris-perl6
+cd idris-perl6
+docker build -t idris-perl .
+docker run -it --entrypoint="/bin/bash" idris-perl -s
+cd examples
+idris fib.idr --codegen perl6 -o fib.p6
+perl6 fib.p6
+```
+
 
 ## Other Interesting Idris Backends 
 - Ruby: idris-ruby(https://github.com/mrb/idris-ruby), 
